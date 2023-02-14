@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C soort -f
+awk '{print $1}' "$1" | sort | uniq -c | sort -nr | awk '{print $2}' | head -n 11
