@@ -1,4 +1,4 @@
-# This manifest creates a file at /tmp
+# Using Puppet creates a file in /tmp
 file { '/tmp/school':
     ensure  => 'file',
     owner   => 'www-data',
